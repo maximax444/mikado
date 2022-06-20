@@ -11,6 +11,7 @@
         display: flex
         justify-content: center
         align-items: center
+        overflow: hidden
     &__title
         font-weight: 600
         font-size: 70px
@@ -21,7 +22,7 @@
         margin-bottom: 59px
     &__form
         width: 470px
-        max-width: 50%
+        max-width: 45%
         input
             display: block
             width: 100%
@@ -54,9 +55,56 @@
         font-size: 14px
         line-height: 17px
         color: #162137
-        max-width: 50%
+        max-width: 45%
         a
             color: #32A5EB
             text-decoration: none
             &:hover
                 color: darken(#32A5EB, 10)
+@media(max-width: 767px)
+    .login
+        padding-bottom: 60px
+        padding-top: 450px
+        &__img
+            width: 100vw
+            height: 400px
+            img
+                max-width: 90%
+                max-height: 90%
+        &__form,&__text
+            max-width: 100%
+@media(max-width: 575px)
+    .login
+        padding-top: 103.13vw
+        padding-bottom: 9.38vw
+        &__img
+            height: 87.50vw
+        &__title
+            font-size: 10vw
+            line-height: 12.50vw
+            margin-bottom: 9.06vw
+        &__form
+            input
+                padding: 5vw 6.25vw
+                font-size: 4.38vw
+                line-height: 150%
+                margin-bottom: 7.19vw
+                &:focus
+                    padding-bottom: 4.69vw
+            .btn
+                width: 100%
+                padding: 5vw
+                font-size: 4.38vw
+                line-height: 5.31vw
+                margin-bottom: 6.56vw
+        &__check
+            margin-top: 11.56vw
+            margin-bottom: 18.13vw
+            span
+                width: 4.38vw
+                height: 4.38vw
+                margin-right: 5.31vw
+        &__text
+            margin-top: 7.50vw
+            font-size: 4.38vw
+            line-height: 172%

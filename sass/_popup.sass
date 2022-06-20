@@ -114,6 +114,22 @@
   padding: 0
  .popup
   &-call
-   padding: 40px 15px
+   padding: 12.50vw 4.69vw
    height: 100vh
    overflow-y: scroll
+ .check
+  span
+   width: 6.25vw
+   height: 6.25vw
+   border: 0.31vw solid #32A5EB
+   margin-right: 6.25vw
+  input
+   &:checked + span
+    &::after
+     width: calc(100% - 1.25vw)
+     height: calc(100% - 1.25vw)
+     top: 0.63vw
+     left: 0.63vw
+  p
+   max-width: calc(100% - 12.50vw)
+   font-size: 3.75vw
