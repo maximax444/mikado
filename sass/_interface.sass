@@ -258,7 +258,8 @@
   grid-gap: 10px
   text-decoration: none
   color: #162137
-
+  img
+   max-width: 95px
 @keyframes logo
  0%
   transform: translateY(0px)
@@ -339,29 +340,58 @@
 @media (max-width: 575px)
  .container
   width: 100%
-  padding-left: 15px
-  padding-right: 15px
+  padding-left: 4.69vw
+  padding-right: 4.69vw
   margin: auto
 @media(max-width: 575px)
+ .header
+  padding: 6.25vw 0
+  &__logo
+   width: 60vw
+   max-width: 100%
+   svg
+    height: auto
+    width: 100%
  .footer
-  .btn
-   display: flex
-   justify-content: center
-   width: 100%
+  padding: 12.50vw 0
+  &__logo
+   width: 63.44vw
+   margin-bottom: 6.25vw
+   img
+    width: 100%
   &__main
    width: 100%
-   margin-bottom: 35px
+   margin-bottom: 10.94vw
   &__menu
    border-bottom: 0
-   display: block
+   flex-direction: column
+   grid-gap: 0
+   align-items: flex-start
    a
     padding-top: 0
-    margin-bottom: 18px
-    padding-bottom: 6px
+    margin-bottom: 5.63vw
+    padding-bottom: 1.88vw
+    font-size: 4.38vw
+    line-height: 5.31vw
   &__top
    margin-bottom: 0
   &__dop
    display: block
+   font-size: 3.75vw
+   line-height: 4.38vw
   &__copy
-   max-width: 200px
-   margin-bottom: 20px
+   max-width: 62.50vw
+   margin-bottom: 6.25vw
+  &__dev img
+   width: 29.38vw
+   max-width: 100%
+ .btn
+  border: 0.63vw solid #32A5EB
+  cursor: pointer
+  padding: 4.69vw
+  font-weight: 700
+  font-size: 4.38vw
+  line-height: 5.31vw
+  width: 100%
+  display: flex
+  justify-content: center
