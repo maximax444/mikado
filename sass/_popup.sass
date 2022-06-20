@@ -3,7 +3,7 @@
  overflow-y: scroll
  top: 0
  left: 0
- width: 100vw 
+ width: 100vw
  height: 100vh
  background-color: rgba(#162137, 0.5)
  z-index: 10
@@ -74,6 +74,17 @@
   height: 20px
   border: 1px solid #32A5EB
   margin-right: 20px
+  position: relative
+  &::after
+   content: ""
+   display: block
+   width: 0
+   height: 0
+   top: 50%
+   position: absolute
+   left: 50%
+   background-color: #32A5EB
+   transition: all 0.15s
  input
   position: absolute
   top: 0
@@ -84,7 +95,11 @@
   opacity: 0
   visibility: hidden
   &:checked + span
-   background-color: #32A5EB
+   &::after
+    width: calc(100% - 4px)
+    height: calc(100% - 4px)
+    top: 2px
+    left: 2px
  p
   max-width: calc(100% - 40px)
   margin: 0
@@ -101,4 +116,4 @@
   &-call
    padding: 40px 15px
    height: 100vh
-   overflow-y: scroll 
+   overflow-y: scroll

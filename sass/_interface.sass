@@ -16,6 +16,7 @@
   display: flex
 .btn
  border: 2px solid #32A5EB
+ cursor: pointer
  padding: 13px 82px
  font-weight: 700
  font-size: 14px
@@ -27,17 +28,17 @@
  display: inline-block
  position: relative
  transform: translateZ(0)
- &::before 
+ &::before
   content: ''
   position: absolute
   z-index: -1
   top: 0
   bottom: 0
-  left: 0   
+  left: 0
   right: 0
   background-color: #32A5EB
   transform: scaleY(0)
-  transition: all 500ms 
+  transition: all 500ms
  &:hover
   color: #FFFFFF
   &::before
@@ -193,6 +194,7 @@
      width: 100%
 .footer
  padding: 40px 0
+ border-top: 1px solid rgba(#162137, 0.1)
  &__logo
   display: flex
  &__main
@@ -252,27 +254,26 @@
   margin: 0
  &__dev
   display: flex
-  align-items: flex-end 
+  align-items: flex-end
   grid-gap: 10px
   text-decoration: none
   color: #162137
 
-
-@keyframes logo    
-  0%      
-    transform: translateY(0px)
-    width: auto
-  33% 
-    transform: translateY(-5px)
-    transform: translateX(-100px)
-    width: 10px
-  66%
-   transform: translateY(-5px)
-    transform: translateX(0px)
-    width: 10px
-  100% 
-    transform: translateY(0px)
-    width: auto
+@keyframes logo
+ 0%
+  transform: translateY(0px)
+  width: auto
+ 33%
+  transform: translateY(-5px)
+  transform: translateX(-100px)
+  width: 10px
+ 66%
+  transform: translateY(-5px)
+  transform: translateX(0px)
+  width: 10px
+ 100%
+  transform: translateY(0px)
+  width: auto
 .logo__point
  animation: logo 2s ease infinite
 .section
@@ -290,7 +291,7 @@
    width: calc((100vw - 1200px)/2 - 10px)
    left: calc((100vw - 1200px)/2 * (-1))
    position: absolute
-   top: 50% 
+   top: 50%
    margin-top: -1px
    background: #32A4EA
 @media (max-width: 1219px)
@@ -319,7 +320,7 @@
  .header__logo
   max-width: 200px
  .footer
-  &__top 
+  &__top
    flex-direction: column
   &__main
    margin-bottom: 40px
