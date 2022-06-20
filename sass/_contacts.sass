@@ -1,0 +1,209 @@
+.contacts
+ padding-top: 80px
+ padding-bottom: 30px
+ &__title
+  margin: 0
+  font-weight: 600
+  font-size: 70px
+  line-height: 126.7%
+  text-transform: uppercase
+  color: #32A5EB
+  margin-bottom: 40px
+ &__main
+  display: flex
+  align-items: center
+  grid-gap: 33px
+  margin-bottom: 64px
+ &__curr
+  display: flex
+  align-items: center
+  grid-gap: 11px
+  span
+   font-weight: 600
+   font-size: 28px
+   line-height: 30px
+   border-bottom: 2px solid #32A5EB
+   color: #32A5EB
+ &__head
+  background: #ECECEC
+  font-weight: 400
+  font-size: 16px
+  line-height: 26px
+  padding: 0 23px
+  font-size: 16px
+  line-height: 209%
+  color: #32A5EB
+ &__wrap
+  display: flex
+  justify-content: space-between
+ &__col
+  width: 50%
+  padding-right: 20px
+ &__block
+  display: flex
+  align-items: flex-start
+  margin-bottom: 40px
+ &__subtitle
+  width: 100px
+  font-weight: 400
+  font-size: 16px
+  line-height: 32px
+  color: #32A5EB
+ &__text
+  width: calc(100% - 100px)
+  margin: 0
+  font-size: 16px
+  line-height: 209%
+  color: #162137
+ &__link
+  width: calc(100% - 100px)
+  font-size: 28px
+  color: #162137
+  text-decoration: none
+  span
+   position: relative
+   transition: all 0.3s
+   &::before
+    content: ''
+    position: absolute
+    bottom: -5px
+    left: 50%
+    width: 0%
+    height: 2px
+    background-color: #162137
+    transition-duration: 500ms
+   &:hover
+     color: #32A5EB
+     &::before
+      left: 0
+      width: 100%
+ &__info
+  display: flex
+  justify-content: space-between
+ &__cities
+  width: 17% 
+  &-title
+   font-size: 16px
+   line-height: 19px
+   text-transform: capitalize
+   color: #162137
+   cursor: pointer
+   img
+    transition: all 0.3s
+  &-cont
+   padding-top: 10px
+   display: none
+   height: auto	
+   a
+    margin-bottom: 5px
+    display: block
+    font-size: 14px
+    line-height: 17px
+    text-transform: capitalize
+    text-decoration: none
+    &:hover
+     color: #32A5EB
+  &-block
+   margin-bottom: 20px
+   &.active
+    img
+     transform: rotate(180deg)
+   
+ &__place
+  width: 75%
+#map
+ height: 408px
+@media (max-width: 1219px)
+ .contacts
+  &__place
+   width: 85%
+  &__cities
+   width: 15%
+@media(max-width: 991px)
+ .contacts
+  &__wrap
+   display: block
+  &__col
+   width: 100%
+  &__cities
+   width: 20%
+  &__place
+   width: 80%
+@media(max-width: 767px)
+ .contacts
+  padding-top: 50px
+  padding-bottom: 70px
+  &__title
+   font-size: 48px
+  &__info
+   position: relative
+  &__place
+   width: 100%
+  &__cities
+   display: none
+   &.active
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    border: 1px solid #32A5EB
+    padding: 30px 25px
+    background-color: #fff
+  &__main
+   flex-direction: column
+   align-items: flex-start
+   grid-gap: 15px
+   margin-bottom: 25px
+  &__head
+   margin-left: 45px
+  &__curr
+   position: relative
+   padding-right: 20px
+   &::after
+    content: ""
+    display: block
+    position: absolute
+    top: 15px
+    right: 0
+    width: 12px
+    height: 6px
+    background: url('../img/mob-drop.svg') center no-repeat
+@media(max-width: 575px)
+ .contacts
+  padding-top: 12.50vw
+  &__title
+   font-size: 10vw
+   margin-bottom: 10vw
+   line-height: 12.50vw
+  &__curr
+   grid-gap: 2.50vw
+   span
+    font-size: 6.25vw
+    line-height: 7.50vw
+   img 
+    max-width: 7.50vw
+  &__main
+   margin-bottom: 9.38vw
+  &__block
+   display: block
+   margin-bottom: 6.25vw
+  &__subtitle
+   font-size: 4.38vw
+  &__link
+   font-size: 6.25vw
+   width: 100%
+  &__text
+   font-size: 4.38vw
+   width: 100%
+  .btn
+   display: flex
+   justify-content: center
+   padding: 3.13vw 7.81vw
+   font-size: 4.38vw
+  &__head
+   margin-left: 14.06vw
+   padding: 0 7.19vw
+   font-size: 5vw
+ #map
+  height: 65.63vw

@@ -1,0 +1,366 @@
+.container
+ width: 1200px
+ margin: auto
+
+.header
+ padding: 20px 0
+ &__wrap
+  display: flex
+  justify-content: space-between
+  align-items: center
+ &__btns
+  display: flex
+  align-items: center
+  grid-gap: 20px
+ &__logo
+  display: flex
+.btn
+ border: 2px solid #32A5EB
+ padding: 13px 82px
+ font-weight: 700
+ font-size: 14px
+ line-height: 17px
+ text-transform: uppercase
+ color: #32A5EB
+ background-color: transparent
+ text-decoration: none
+ display: inline-block
+ position: relative
+ transform: translateZ(0)
+ &::before 
+  content: ''
+  position: absolute
+  z-index: -1
+  top: 0
+  bottom: 0
+  left: 0   
+  right: 0
+  background-color: #32A5EB
+  transform: scaleY(0)
+  transition: all 500ms 
+ &:hover
+  color: #FFFFFF
+  &::before
+   transform: scaleY(1)
+ &--full
+  color: #FFFFFF
+  background: #32A5EB
+  &::before
+   background: #fff
+  &:hover
+   color: #32A5EB
+   background: transparent
+ &--lines
+  margin-right: 0
+  margin-left: auto
+  display: flex
+  width: 300px
+  height: 50px
+  padding: 0
+  overflow: hidden
+  justify-content: center
+  align-items: center
+  color: #162137
+  font-weight: 700
+  font-size: 14px
+  border: 2px solid #162137
+  position: relative
+  &::before
+   height: 100%
+   width: 9px
+   position: absolute
+   top: 0
+   right: -9px
+   left: auto
+   transform: none
+   transition: all 0.1s
+   background: #002B46
+  &::after
+   content: ""
+   display: block
+   height: 100%
+   width: 5px
+   position: absolute
+   top: 0
+   right: -5px
+   left: auto
+   transform: none
+   background: #225787
+   transition: all 0.2s
+  span
+   &::before
+    content: ""
+    display: block
+    height: 100%
+    width: 3px
+    position: absolute
+    top: 0
+    right: -3px
+    left: auto
+    transform: none
+    background: #0078AE
+    transition: all 0.35s
+   &::after
+    content: ""
+    display: block
+    height: 100%
+    width: 2px
+    position: absolute
+    top: 0
+    right: -2px
+    left: auto
+    transform: none
+    background: #00A3E0
+    transition: all 0.5s
+  &:hover
+   color: #162137
+   &::before
+    right: 0
+   &::after
+    right: 11px
+   span
+    &::before
+     right: 19px
+    &::after
+     right: 27px
+.nav
+ background: #162137
+ &__wrap
+  display: flex
+  justify-content: space-between
+ &__menu
+  display: flex
+  align-items: center
+  padding: 0
+  margin: 0
+  grid-gap: 32px
+  list-style-type: none
+  a
+   display: block
+   padding: 14px 4px
+   padding-top: 15px
+   font-weight: 500
+   font-size: 14px
+   line-height: 16px
+   text-transform: uppercase
+   color: #FFFFFF
+   text-decoration: none
+   position: relative
+   &::before
+    content: ''
+    position: absolute
+    bottom: 0px
+    left: 50%
+    width: 0%
+    height: 2px
+    background-color: #32a5eb
+    transition-duration: 500ms
+   &:hover
+    color: #32A5EB
+    &::before
+     left: 0
+     width: 100%
+ &__lang
+  display: flex
+  list-style-type: none
+  margin: 0
+  padding: 0
+  grid-gap: 20px
+  a
+   display: block
+   padding: 14px 0px
+   padding-top: 15px
+   font-weight: 500
+   font-size: 14px
+   line-height: 16px
+   text-transform: uppercase
+   color: #FFFFFF
+   text-decoration: none
+   position: relative
+   &::before
+    content: ''
+    position: absolute
+    bottom: 0px
+    left: 50%
+    width: 0%
+    height: 2px
+    background-color: #32a5eb
+    transition-duration: 500ms
+   &:hover, &.active
+    color: #32A5EB
+    &::before
+     left: 0
+     width: 100%
+.footer
+ padding: 40px 0
+ &__logo
+  display: flex
+ &__main
+  display: flex
+  align-items: center
+  grid-gap: 85px
+ &__menu
+  list-style-type: none
+  padding: 0
+  margin: 0
+  grid-gap: 30px
+  display: flex
+  align-items: center
+  border-bottom: 3px solid #32A5EB
+  a
+   display: block
+   padding-top: 16px
+   padding-bottom: 16px
+   margin-bottom: -3px
+   text-decoration: none
+   font-weight: 500
+   font-size: 14px
+   line-height: 17px
+   color: #162137
+   position: relative
+   &::before
+    content: ''
+    position: absolute
+    bottom: 0px
+    left: 50%
+    width: 0%
+    height: 3px
+    background-color: #162137
+    transition-duration: 500ms
+   &:hover, &.active
+    color: #32A5EB
+    &::before
+     left: 0
+     width: 100%
+   &:hover
+    color: #32A5EB
+ &__top
+  margin-bottom: 40px
+  display: flex
+  justify-content: space-between
+  align-items: center
+ &__dop
+  display: flex
+  align-items: center
+  justify-content: space-between
+  font-weight: 500
+  font-size: 12px
+  line-height: 14px
+  text-transform: capitalize
+  color: #162137
+ &__copy
+  margin: 0
+ &__dev
+  display: flex
+  align-items: flex-end 
+  grid-gap: 10px
+  text-decoration: none
+  color: #162137
+
+
+@keyframes logo    
+  0%      
+    transform: translateY(0px)
+    width: auto
+  33% 
+    transform: translateY(-5px)
+    transform: translateX(-100px)
+    width: 10px
+  66%
+   transform: translateY(-5px)
+    transform: translateX(0px)
+    width: 10px
+  100% 
+    transform: translateY(0px)
+    width: auto
+.logo__point
+ animation: logo 2s ease infinite
+.section
+ &__title
+  font-weight: 600
+  font-size: 28px
+  line-height: 33px
+  color: #32A5EB
+  position: relative
+  max-width: 23%
+  &::before
+   content: ""
+   height: 2px
+   display: block
+   width: calc((100vw - 1200px)/2 - 10px)
+   left: calc((100vw - 1200px)/2 * (-1))
+   position: absolute
+   top: 50% 
+   margin-top: -1px
+   background: #32A4EA
+@media (max-width: 1219px)
+ .footer
+  &__main
+   grid-gap: 30px
+   .btn
+    padding-left: 40px
+    padding-right: 40px
+@media(max-width: 991px)
+ .btn
+  padding: 10px 25px
+ .footer
+  &__top
+   align-items: flex-start
+  &__menu
+   a
+    padding-top: 3px
+  &__main
+   display: block
+  &__logo
+   margin-bottom: 20px
+@media(max-width: 767px)
+ .nav, .header__btns
+  display: none
+ .header__logo
+  max-width: 200px
+ .footer
+  &__top 
+   flex-direction: column
+  &__main
+   margin-bottom: 40px
+@media (max-width: 1219px)
+ .container
+  width: 980px
+  margin: auto
+@media (max-width: 991px)
+ .container
+  width: 740px
+  margin: auto
+@media (max-width: 767px)
+ .container
+  width: 550px
+  margin: auto
+@media (max-width: 575px)
+ .container
+  width: 100%
+  padding-left: 15px
+  padding-right: 15px
+  margin: auto
+@media(max-width: 575px)
+ .footer
+  .btn
+   display: flex
+   justify-content: center
+   width: 100%
+  &__main
+   width: 100%
+   margin-bottom: 35px
+  &__menu
+   border-bottom: 0
+   display: block
+   a
+    padding-top: 0
+    margin-bottom: 18px
+    padding-bottom: 6px
+  &__top
+   margin-bottom: 0
+  &__dop
+   display: block
+  &__copy
+   max-width: 200px
+   margin-bottom: 20px

@@ -1,0 +1,104 @@
+.overlay
+ position: fixed
+ overflow-y: scroll
+ top: 0
+ left: 0
+ width: 100vw 
+ height: 100vh
+ background-color: rgba(#162137, 0.5)
+ z-index: 10
+ display: none
+ &-active
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 40px 0
+.popup
+ &-close
+  margin: 0 auto
+  margin-bottom: 50px
+  transition: all 0.3s
+  width: 27px
+  height: 27px
+  display: flex
+  justify-content: center
+  align-items: center
+  &:hover
+   cursor: pointer
+   transform: rotate(90deg)
+ &-call
+  max-width: 100vw
+  width: 688px
+  height: 693px
+  background: #FFFFFF
+  margin: 0 auto
+  padding: 70px 135px 60px 125px
+  input:not(.checkbox)
+   display: block
+   margin-bottom: 16px
+   width: 100%
+   border: 0
+   border-bottom: 1px solid #32A5EB
+   padding: 16px 20px
+   font-size: 16px
+   line-height: 150%
+   color: #162137
+   &:focus
+    outline: none
+    border-bottom: 2px solid #32A5EB
+  button
+   cursor: pointer
+   display: block
+   margin: 0 auto
+   margin-top: 50px
+   margin-bottom: 40px
+   transition: all 0.3s
+   width: 300px
+   height: 50px
+   padding: 0
+   display: flex
+   justify-content: center
+   align-items: center
+ &__title
+  font-weight: 600
+  font-size: 28px
+  line-height: 33px
+  color: #32A5EB
+  margin-bottom: 40px
+  text-align: center
+.check
+ display: flex
+ position: relative
+ span
+  width: 20px
+  height: 20px
+  border: 1px solid #32A5EB
+  margin-right: 20px
+ input
+  position: absolute
+  top: 0
+  left: 0
+  height: 0
+  width: 0
+  overflow: hidden
+  opacity: 0
+  visibility: hidden
+  &:checked + span
+   background-color: #32A5EB
+ p
+  max-width: calc(100% - 40px)
+  margin: 0
+  font-size: 12px
+  line-height: 150%
+  color: #162137
+.animate__animated.animate__backInUp
+ --animate-duration: 0.8s
+@media(max-width: 575px)
+ .overflow
+  overflow-y: hidden
+  padding: 0
+ .popup
+  &-call
+   padding: 40px 15px
+   height: 100vh
+   overflow-y: scroll 
