@@ -19,8 +19,13 @@
    justify-content: space-between
    align-items: flex-start
   &__img
+   overflow: hidden
    img
     width: 100%
+    transition: all 0.3s
+   &:hover
+    img
+     transform: scale(1.1)
   &__lines
    position: absolute
    height: 100%
@@ -73,3 +78,296 @@
     color: #162137
  &-features
   padding-top: 110px
+  &__wrap
+   width: 75%
+   display: flex
+   flex-wrap: wrap
+   justify-content: flex-end
+  &__img
+   width: 53px
+   height: 53px
+   margin-bottom: 90px
+  &__text
+   font-weight: 500
+   font-size: 20px
+   line-height: 140%
+   transition: all 0.3s
+   color: #162137
+   span
+    color: #32A5EB
+    transition: all 0.3s
+  &__block
+   width: 33%
+   border: 1px solid #32A5EB
+   margin-right: -1px
+   margin-bottom: -1px
+   padding: 50px 30px
+   transition: all 0.3s
+   position: relative
+   &::after
+    content: ""
+    width: 0
+    height: 5px
+    display: block
+    position: absolute
+    bottom: 0
+    left: 50%
+    background-color: #162137
+    transition: all 0.3s
+   &:hover
+    background: #32A5EB
+    &::after
+     width: calc(100% + 2px)
+     left: -1px
+    .home-features__text
+     color: #fff
+     span
+      color: #fff
+ &-partners
+  padding-top: 110px
+  &__subtitle
+   font-weight: 500
+   font-size: 28px
+   line-height: 140%
+   text-transform: uppercase
+   color: #162137
+   max-width: 850px
+   margin-bottom: 60px
+   span
+    color: #32A5EB
+  &__logos
+   display: flex
+   justify-content: center
+   align-items: center
+   margin: 0
+   padding: 0
+   list-style-type: none
+   grid-gap: 110px
+   margin-bottom: 130px
+  &__wrap
+   background: conic-gradient(from 269.99deg at 50% 74.54%, #162137 0deg, #32A5EB 360deg), #162137
+   position: relative
+   padding-bottom: 30px
+  &__img
+   position: absolute
+   top: 0
+   right: 77px
+  &__list
+   padding: 82px
+   margin: 0
+   list-style-type: none
+   li
+    margin-bottom: 37px
+    padding-left: 60px
+    position: relative
+    font-weight: 600
+    font-size: 20px
+    line-height: 140%
+    color: #FFFFFF
+    &::before
+     content: ""
+     width: 26px
+     height: 26px
+     background: url('../img/partners-check.svg') center no-repeat
+     position: absolute
+     display: block
+     top: 0
+     left: 0
+  &__btn
+   margin-left: 141px
+   width: 300px
+   height: 50px
+   background-color: #fff
+   color: #2878AF
+   padding: 0
+   display: flex
+   justify-content: center
+   align-items: center
+   &:hover
+    border: 1px solid #fff
+ &-news
+  padding-top: 75px
+  padding-bottom: 80px
+  &__subtitle
+   font-weight: 500
+   font-size: 28px
+   line-height: 140%
+   text-transform: uppercase
+   color: #162137
+   max-width: 800px
+   margin-bottom: 42px
+   span
+    color: #32A5EB
+  &__wrap
+   display: flex
+   align-items: flex-end
+   margin-bottom: 40px
+  &__block
+   width: 25%
+   padding-top: 62px
+   padding-bottom: 40px
+   padding-left: 29px
+   padding-right: 20px
+   font-size: 14px
+   line-height: 17px
+   transition: all 0.3s
+   text-decoration: none
+   color: #162137
+  &__logo
+   height: 37px
+   width: 120px
+   transition: all 0.3s
+   display: flex
+   justify-content: flex-start
+   align-items: flex-end
+   img
+    max-width: 100%
+    max-height: 100%
+    transition: all 0.3s
+  &__top
+   display: flex
+   justify-content: space-between
+   align-items: flex-end
+   margin-bottom: 35px
+  &__name
+   font-weight: 600
+   margin-top: 0
+   margin-bottom: 15px
+   height: 34px
+   display: block
+   overflow: hidden
+  &__descr
+   display: block
+   margin-top: 0
+   margin-bottom: 31px
+   height: 51px
+   overflow: hidden
+   transition: margin-bottom 0.3s
+  &__link
+   font-weight: 700
+   font-size: 14px
+   line-height: 17px
+   text-transform: uppercase
+   color: #32A5EB
+   svg
+    margin-left: 10px
+    transition: all 0.3s
+    path
+     transition: all 0.3s
+  &__block:hover
+   background: #32A5EB
+   color: #fff
+   padding-top: 17px
+   .home-news
+    &__logo
+     margin-left: -29px
+     width: 136px
+     height: 43px
+     background-color: #fff
+     display: flex
+     justify-content: center
+     align-items: center
+    &__descr
+     margin-bottom: 69px
+    &__link
+     color: #fff
+     svg
+      margin-left: 15px
+      path
+       stroke: #fff
+  &__more
+   margin-right: 0
+   margin-left: auto
+   display: flex
+   width: 300px
+   justify-content: center
+ &-map
+  overflow: hidden
+  padding-top: 180px
+  &__wrap
+   display: flex
+   justify-content: flex-start
+  &__list
+   width: 20%
+   padding-top: 20px
+   padding-left: 80px
+   .contacts__cities
+    width: 100%
+  &__map
+   width: 1440px
+   height: 600px
+   display: flex
+   align-items: center
+   justify-content: flex-start
+   flex-shrink: 0
+   padding-bottom: 130px
+   &-wrap
+    width: 80%
+   svg
+    width: 1440px
+    height: 999px
+    max-width: 1440px
+    max-height: 999px
+.main
+ background: #162137
+ overflow: hidden
+ &__arrows
+  width: 70px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding-top: 475px
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 5
+ &__arrow
+  cursor: pointer
+  transform: scale(1)
+  transition: all 0.3s
+  &:hover
+   transform: scale(1.2)
+ .container
+  position: relative
+ &__slide
+  height: 595px
+  position: relative
+  .container::after
+   content: ""
+   display: block
+   width: 440px
+   height: 400px
+   position: absolute
+   top: -84px
+   right: -116px
+   border-radius: 50%
+   background: #32A5EB
+   filter: blur(200px)
+   z-index: 2
+  .main__title
+   padding-top: 137px
+  &--blue
+   background: #32A5EB
+   .container::after
+    display: none
+   .main__title
+    padding-top: 186px
+ &__title
+  font-weight: 300
+  font-size: 60px
+  line-height: 126.7%
+  text-transform: uppercase
+  color: #FFFFFF
+  span
+   font-weight: 600
+   color: #32A5EB
+  img
+   display: block
+ &__m
+  position: absolute
+  top: 90px
+  right: -80px
+ &__img
+  position: absolute
+  top: 0px
+  right: -100px
