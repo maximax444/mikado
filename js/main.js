@@ -92,11 +92,13 @@ if (screen.width >= 1200) {
     let bg = $('.login__img img');
     let bg2 = $('.register__img img');
     let map = $('.home-map__map');
+    let zekk = $('.zekkert-top__img img');
     window.addEventListener('mousemove', function (e) {
         let x = e.clientX / window.innerWidth;
         let y = e.clientY / window.innerHeight;
         bg.css('transform', 'translate(-' + x * 30 + 'px, -' + y * 30 + 'px)');
         bg2.css('transform', 'translate(-' + x * 30 + 'px, -' + y * 30 + 'px)');
+        zekk.css('transform', 'translateX(-' + x * 30 + 'px)');
         map.css('transform', 'translate(-' + x * 20 + 'px, -' + y * 20 + 'px)');
     });
 }
