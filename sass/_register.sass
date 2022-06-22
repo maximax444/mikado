@@ -1,0 +1,271 @@
+.register
+ &__top
+  padding-top: 80px
+  padding-bottom: 180px
+  background: #32A5EB
+ &__text
+  font-weight: 400
+  font-size: 14px
+  line-height: 17px
+  color: #FFFFFF
+  max-width: 575px
+  margin-bottom: 17px
+  margin-top: 0
+ &__title
+  margin-top: 0
+  margin-bottom: 80px
+  font-weight: 600
+  font-size: 70px
+  line-height: 126.7%
+  text-transform: uppercase
+  color: #FFFFFF
+ &__wrap
+  position: relative
+ &__img
+  position: absolute
+  top: -20px
+  right: 60px
+ &__subtitle
+  font-weight: 700
+  font-size: 28px
+  line-height: 33px
+  text-transform: uppercase
+  color: #FFFFFF
+  position: relative
+  margin-bottom: 38px
+  &::after
+   content: ""
+   display: block
+   width: 210px
+   height: 2px
+   position: absolute
+   bottom: -16px
+   left: 0
+   background-color: #fff
+ &__bottom
+  padding-top: 110px
+  padding-bottom: 60px
+ &__form
+  input
+   width: 570px
+   max-width: 47%
+   margin-bottom: 16px
+   transition: all 0.3s
+   padding: 18px 20px
+   font-size: 16px
+   line-height: 150%
+   color: #162137
+   border-radius: 0
+   border: 0 
+   border-bottom: 1px solid #32A5EB
+   &.full
+    width: 100%  
+    max-width: 100%
+  .btn
+   width: 300px
+   height: 50px
+   display: flex
+   justify-content: center
+   align-items: center
+   margin: 0 auto
+   margin-top: 60px
+   padding: 0
+ &__main
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+ &__doptitle
+  font-weight: 500
+  font-size: 18px
+  line-height: 209%
+  color: #32A5EB
+  margin-top: 80px
+  margin-bottom: 38px
+.select
+ position: relative
+ width: 570px
+ max-width: 47%
+ input
+  max-width: 100%
+  width: 100%
+  background-color: #fff
+ &::after
+  content: ""
+  display: block
+  width: 16px
+  height: 10px
+  position: relative
+  background: url('../img/drop.svg') center no-repeat
+  position: absolute
+  top: 32px
+  margin-top: -5px
+  right: 30px
+  transition: all 0.3s
+  transform: rotate(0)
+ &__drop
+  padding: 30px 70px
+  padding-top: 20px
+  margin: 0
+  list-style-type: none
+  background: #FFFFFF
+  border: 1px solid #32A5EB  
+  position: absolute
+  top: calc(100% - 17px)
+  left: 0
+  width: 100%
+  z-index: 3
+  display: none
+  li
+   font-size: 14px
+   line-height: 17px
+   padding: 13px 0
+   &:hover
+    cursor: pointer
+    color: #32A5EB
+ &.active
+  .select
+   &__drop
+    display: block
+   &::after
+    transform: rotate(180deg)
+.big-placeholder
+ width: 570px
+ max-width: 47%
+ input
+  width: 100%
+  max-width: 100%
+ span
+  display: none
+@media(max-width: 991px)
+ .register
+  &__top
+   overflow: hidden
+  &__img
+   right: -100px
+ .select
+  input
+   padding-right: 50px
+@media(max-width: 767px)
+ .register
+  &__wrap
+   position: static
+  &__top
+   position: relative
+   background-color: #fff
+   padding-top: 450px
+   padding-bottom: 50px	
+  &__img
+   display: flex
+   justify-content: center
+   align-items: center
+   position: absolute
+   background: #32A5EB
+   width: 100vw
+   height: 400px
+   right: 0
+   img
+    max-height: 80%
+  &__title
+   color: #32A5EB
+  &__subtitle
+   color: #32A5EB
+   &::after
+    background-color: #32A5EB
+  &__text
+   font-size: 14px
+   line-height: 172%
+   color: #162137
+  &__form
+   input
+    width: 100%
+    max-width: 100%
+  &__bottom
+   padding-top: 0
+ .select
+  width: 100%
+  max-width: 100%
+ .big-placeholder
+  width: 100%
+  max-width: 100%
+  position: relative
+@media(max-width: 575px)
+ .register
+  &__img
+   height: 87.50vw
+  &__top
+   padding-top: 101.56vw
+   padding-bottom: 18.75vw
+  &__bottom
+   padding-bottom: 20.31vw
+  &__title
+   font-size: 10vw
+   line-height: 12.50vw
+   margin-bottom: 11.56vw
+  &__subtitle
+   margin-bottom: 15vw
+   font-size: 6.25vw
+   line-height: 7.50vw
+   &::after
+    width: 100%
+    height: 0.63vw
+    bottom: -8.13vw
+  &__text
+   font-size: 4.38vw
+   margin-bottom: 5.31vw
+  &__form
+   input
+    font-size: 4.38vw
+    line-height: 150%
+    padding: 4.69vw 6.25vw
+    margin-bottom: 6.25vw
+    border-bottom: 0.31vw solid #32A5EB
+   .btn
+    width: 100%
+    height: 15.63vw
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 0
+    margin-bottom: 0
+    font-size: 4.38vw
+    margin-top: 15.63vw
+  &__doptitle
+   margin-top: 12.50vw
+   margin-bottom: 6.25vw
+   font-size: 5vw
+   line-height: 10.63vw
+ .select
+  input
+   padding-right: 15.50vw
+  &::after
+   right: 6.25vw
+   top: 8.44vw
+  &__drop
+   padding: 3.13vw 6.25vw
+   top: calc(100% - 6.56vw)
+   li
+    padding: 1.56vw 0
+    font-size: 4.38vw
+    line-height: 150%
+ .big-placeholder
+  input
+   padding-top: 7.81vw
+   padding-bottom: 7.81vw
+   &:focus + span
+    display: none
+  span
+   display: block
+   height: 13.13vw
+   width: 100%
+   left: 0
+   top: 4.69vw
+   font-size: 4.38vw
+   padding: 0 6.25vw	
+   position: absolute
+   background-color: #fff
+   line-height: 150%
+   pointer-events: none
+   transition: all 0.3s
+   &.hide
+    opacity: 0
+  

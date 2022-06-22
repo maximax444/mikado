@@ -31,6 +31,27 @@ $('.contacts__curr').on('click', function () {
         $('.contacts__cities').toggleClass('active');
     }
 });
+$('.select').on('click', function (e) {
+    $(this).toggleClass('active');
+    $('.select').not($(this)).removeClass('active');
+});
+$('.select__drop li').on('click', function (e) {
+    $(this).closest('.select').find('input').val($(this).html());
+    if ($(window).width() <= 575) {
+        $(this).closest('.select').find('span').hide();
+        $(this).closest('.select').find('input').css('padding', '4.69vw 12.25vw 4.69vw 6.25vw');
+    }
+    
+});
+$('.big-placeholder input').on('input', function() {
+    if ($(this).val() != "") {
+        $(this).next('span').addClass('hide');
+        $(this).css('padding', '4.69vw 6.25vw');
+    } else {
+        $(this).next('span').removeClass('hide');
+        $(this).css('padding', '7.81vw 6.25vw');
+    }
+});
 $(".main").slick({
     slide: ".main__slide",
     slidesToShow: 1,
@@ -69,11 +90,13 @@ window.addEventListener('scroll', function () {
 });
 if (screen.width >= 1200) {
     let bg = $('.login__img img');
+    let bg2 = $('.register__img img');
     let map = $('.home-map__map');
     window.addEventListener('mousemove', function (e) {
         let x = e.clientX / window.innerWidth;
         let y = e.clientY / window.innerHeight;
         bg.css('transform', 'translate(-' + x * 30 + 'px, -' + y * 30 + 'px)');
+        bg2.css('transform', 'translate(-' + x * 30 + 'px, -' + y * 30 + 'px)');
         map.css('transform', 'translate(-' + x * 20 + 'px, -' + y * 20 + 'px)');
     });
 }
