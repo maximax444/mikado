@@ -78,6 +78,8 @@
     color: #162137
  &-features
   padding-top: 110px
+  &__arrows
+   display: none
   &__wrap
    width: 75%
    display: flex
@@ -104,6 +106,8 @@
    padding: 50px 30px
    transition: all 0.3s
    position: relative
+   path
+    transition: all 0.3s
    &::after
     content: ""
     width: 0
@@ -116,13 +120,17 @@
     transition: all 0.3s
    &:hover
     background: #32A5EB
+    path
+     fill: #fff
     &::after
      width: calc(100% + 2px)
      left: -1px
-    .home-features__text
-     color: #fff
-     span
+    .home-features
+
+     &__text
       color: #fff
+      span
+       color: #fff
  &-partners
   padding-top: 110px
   &__subtitle
@@ -148,10 +156,13 @@
    background: conic-gradient(from 269.99deg at 50% 74.54%, #162137 0deg, #32A5EB 360deg), #162137
    position: relative
    padding-bottom: 30px
+   overflow: hidden
   &__img
    position: absolute
-   top: 0
+   top: -160px
    right: 77px
+   img
+    width: 533px
   &__list
    padding: 82px
    margin: 0
@@ -215,7 +226,7 @@
    color: #162137
   &__logo
    height: 37px
-   width: 120px
+   width: 100px
    transition: all 0.3s
    display: flex
    justify-content: flex-start
@@ -260,12 +271,11 @@
    padding-top: 17px
    .home-news
     &__logo
+     padding: 0 29px
      margin-left: -29px
-     width: 136px
-     height: 43px
+     width: 158px
      background-color: #fff
      display: flex
-     justify-content: center
      align-items: center
     &__descr
      margin-bottom: 69px
@@ -327,11 +337,13 @@
   transition: all 0.3s
   &:hover
    transform: scale(1.2)
+   opacity: 0.3
  .container
   position: relative
  &__slide
   height: 595px
   position: relative
+  overflow: hidden
   .container::after
    content: ""
    display: block
@@ -371,3 +383,287 @@
   position: absolute
   top: 0px
   right: -100px
+@media(max-width: 1219px)
+ .main__m, .main__img
+  width: 600px
+  img
+   max-width: 100%
+ .home
+  &-about
+   &__num
+    span
+     font-size: 62px
+    b
+     font-size: 18px
+   &__wrap
+    display: block
+    width: 100%
+    .section__title
+     margin-bottom: 60px
+  &-features__wrap
+   width: 100%
+  &-news
+   &__block
+    width: 33%
+    &:last-child
+     display: none
+@media(max-width: 991px)
+ .main
+  &__slide
+   .main__title
+    padding-top: 60px
+  &__m, &__img
+   bottom: 0
+   top: auto
+  &__img
+   width: 500px
+  .container
+   height: 100%
+ .home
+  &-about
+   &__cont
+    width: 100%
+   &__nums
+    flex-wrap: wrap
+   &__num
+    width: 50%
+    margin: 20px 0
+  &-features
+   &__block
+    padding: 30px 25px
+   &__text
+    margin: 0
+   &__img
+    margin-bottom: 50px
+  &-partners
+   &__list
+    padding-bottom: 300px
+   &__img
+    top: 100px
+    right: 0
+    img
+     width: 400px
+   &__btn
+    margin-left: 82px
+  &-map
+   &__list
+    padding-left: 0
+  &-news
+   &__wrap
+    flex-wrap: wrap
+   &__block
+    width: 50%
+    &:last-child
+     display: block
+@media(max-width: 767px)
+ .main
+  &__slide
+   .main__title
+    padding-top: 50px
+  &__m
+   width: 500px
+  &__img
+   width: 450px
+ .section__title
+  max-width: 100%
+ .home
+  &-features
+   &__block
+    width: 50%
+  &-partners
+   &__logos
+    grid-gap: 15px
+  &-map__map-wrap
+   width: 100%
+@media(max-width: 575px)
+ .main
+  &__slide
+   height: 134.38vw
+   .main__title
+    padding-top: 14.69vw
+    font-size: 10vw
+    line-height: 12.50vw
+    position: relative
+    z-index: 3
+    img
+     width: 100%
+  &__m
+   width: 100%
+   right: 0
+   bottom: 21.88vw
+  &__img
+   width: 80%
+   right: 10%
+   bottom: 12.50vw
+  &__arrows
+   width: 21.88vw
+   padding-top: 118.75vw
+   left: 4.69vw
+   z-index: 3
+   svg
+    width: 2.50vw
+    height: 3.75vw
+ .home
+  &-about
+   padding-top: 11.25vw
+   padding-bottom: 0
+   &__wrap
+    position: relative
+    .section__title
+     margin-top: 0
+     margin-bottom: 13.13vw
+   &__subtitle
+    padding-left: 14.06vw
+    font-size: 6.25vw
+    line-height: 140%
+    margin-bottom: 15vw
+   &__img
+    height: 62.50vw
+    img
+     width: 100%
+     height: 100%
+     object-fit: cover
+   &__nums
+    padding: 13.13vw 0
+    padding-bottom: 0
+   &__num
+    padding-left: 0
+    font-size: 4.69vw
+    line-height: 5.63vw
+    margin-bottom: 13.13vw
+    margin-top: 0
+    span
+     margin: 0
+     font-size: 12.50vw
+     line-height: 14.69vw
+     margin-top: 1.88vw
+     margin-bottom: 1.25vw
+    b
+     font-size: 4.69vw
+     line-height: 5.63vw
+  &-features
+   padding-top: 20vw
+   padding-bottom: 12.50vw
+   &__wrap
+    position: relative
+   .section__title
+    margin-bottom: 14.69vw
+   &__arrows
+    position: absolute
+    bottom: -12.50vw
+    width: 100%
+    left: 0
+    display: flex
+    justify-content: center
+    grid-gap: 18.75vw
+    align-items: center
+    .home-features_left:hover, .home-features_right:hover
+     opacity: 1
+    svg
+     width: 2.50vw
+     height: 3.75vw
+   &__text
+    font-size: 5.63vw
+    line-height: 140%
+   &__block
+    padding: 14.69vw 8.75vw
+    margin: 0.31vw
+   &__img
+    width: 16.56vw
+    height: 16.56vw
+    margin-bottom: 26.25vw
+    svg
+     width: 100%
+     height: 100%
+  &-partners
+   padding-top: 17.81vw
+   .section__title
+    margin-bottom: 10vw
+    margin-top: 0
+   &__subtitle
+    font-size: 6.25vw
+    line-height: 140%
+    margin-bottom: 11.88vw
+   &__logos
+    justify-content: flex-start
+    overflow-x: scroll
+    padding-bottom: 5vw
+    margin-bottom: 15.63vw
+    grid-gap: 17.19vw
+   &__wrap
+    margin-left: -4.69vw
+    margin-right: -4.69vw
+    overflow: hidden
+   &__list
+    padding: 12.50vw 6.25vw
+    padding-bottom: 124.69vw
+    li
+     margin-bottom: 11.56vw
+     padding-left: 18.44vw
+     font-size: 5vw
+     line-height: 140%
+     &::before
+      width: 8.13vw
+      height: 8.13vw
+      background-size: cover
+   &__img
+    top: 60vw
+    width: 113.13vw
+    margin-right: -9.38vw
+    img
+     width: 100%
+   &__btn
+    margin-left: 6.25vw
+    width: 87.50vw
+    height: 15.63vw
+    border: 0
+  &-map
+   padding-top: 39.06vw
+   .section__title
+    margin-bottom: 8.13vw
+    margin-top: 0
+   &__map
+    height: 102.19vw
+    margin-left: -6.25vw
+    svg
+     width: 218.75vw
+     height: 156.25vw
+  &-news
+   padding-top: 0
+   padding-bottom: 17.19vw
+   &__subtitle
+    font-size: 6.25vw
+    line-height: 140%
+    margin-bottom: 0
+   .section__title
+    margin-bottom: 10vw
+    margin-top: 0
+   &__wrap
+    display: block
+    margin-bottom: 0
+   &__more
+    width: 100%
+   &__block
+    width: 100%
+    display: none
+    padding: 20.31vw 0
+    font-size: 4.38vw
+    line-height: 5.31vw
+    &:last-child
+     display: none
+    &:first-child
+     display: block
+   &__top
+    margin-bottom: 10.94vw
+   &__logo
+    height: 11.56vw
+    width: 31.25vw
+   &__name
+    margin-bottom: 4.69vw
+    height: 10.63vw
+   &__descr
+    margin-bottom: 9.69vw
+    height: auto
+   &__link
+    font-size: 4.38vw
+    line-height: 5.31vw

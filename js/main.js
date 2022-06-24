@@ -106,3 +106,13 @@ if (screen.width >= 1200) {
         map.css('transform', 'translate(-' + x * 20 + 'px, -' + y * 20 + 'px)');
     });
 }
+if ($(window).width() <= 575) {
+    $(".home-features__wrap").slick({
+        slide: ".home-features__block",
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: ".home-features_left",
+        nextArrow: ".home-features_right"
+    });
+}
