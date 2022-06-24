@@ -24,8 +24,8 @@
    padding-bottom: 173px
    margin: 0
    span
-     font-weight: 600
-     display: block
+    font-weight: 600
+    display: block
   &__wrap
    position: relative
   &__img
@@ -36,12 +36,12 @@
    z-index: 3
    span
     position: absolute
-    top: 156px 
+    top: 156px
     right: -34px
     display: flex
  &-main
   padding-top: 125px
-  padding-bottom: 145px	
+  padding-bottom: 145px
   &__title
    margin-bottom: 80px
    margin-top: 0
@@ -49,6 +49,8 @@
    font-size: 28px
    line-height: 140%
    text-transform: uppercase
+   span
+    color: #32A5EB
   &__wrap
    display: grid
    grid-template-columns: repeat(3, 1fr)
@@ -60,6 +62,7 @@
    border-right: 0
    border-collapse: collapse
    padding: 54px 57px 100px 57px
+   transition: all 0.3s
   &__el
    margin-bottom: 62px
    font-weight: 500
@@ -67,6 +70,7 @@
    line-height: 24px
    color: #162137
    position: relative
+   transition: all 0.3s
    &::before
     content: ""
     left: -29px
@@ -77,13 +81,27 @@
     height: 6px
     border-radius: 50%
     border: 2px solid #32A5EB
+    transition: all 0.3s
   &__text
    font-weight: 500
    font-size: 20px
    line-height: 140%
    color: #162137
+   transition: all 0.3s
    span
     color: #32A5EB
+    transition: all 0.3s
+  &__block:hover
+   background-color: #32A5EB
+   .zekkert-main
+    &__el
+     color: #fff
+     &::before
+      border: 2px solid #fff
+    &__text
+     color: #fff
+     span
+      color: #fff
   &__last
    display: grid
    grid-template-columns: repeat(2,1fr)
@@ -104,7 +122,7 @@
     position: absolute
     bottom: 0
     right: 0
-    display: flex 
+    display: flex
   &__all
    padding: 87px 60px
    padding-bottom: 40px
@@ -146,8 +164,8 @@
    align-items: flex-start
    margin-bottom: 60px
   &__title
-   width: 810px
-   max-width: 80%
+   width: 710px
+   max-width: 75%
    font-weight: 500
    font-size: 28px
    line-height: 140%
@@ -185,3 +203,143 @@
    display: flex
    justify-content: center
    align-items: center
+@media(max-width: 1200px)
+ .zekkert-top__img
+  right: -110px
+  span
+   right: 114px
+   top: 36px
+@media(max-width: 991px)
+ .zekkert
+  &-top
+   height: auto
+   &__img
+    position: relative
+    right: 0
+    top: 0
+    display: flex
+    justify-content: center
+    span
+     right: 0
+   &__title
+    padding-top: 80px
+    padding-bottom: 20px
+  &-main
+   &__title
+    font-size: 26px
+   &__block
+    padding: 40px
+   &__last
+    display: block
+   &__prize
+    padding-top: 60px
+    padding-bottom: 200px
+  &-cat
+   &__top
+    display: block
+   &__title
+    margin-top: 25px
+   .section__title
+    max-width: 100%
+   &__wrap
+    grid-template-columns: repeat(3, 1fr)
+    border: 0
+   &__block
+    margin-bottom: -1px
+    &:nth-child(3n), &:last-child
+     border-right: 1px solid #32A5EB
+     margin-right: -1px
+@media(max-width: 767px)
+ .zekkert
+  &-top
+   &__title
+    font-size: 60px
+@media(max-width: 575px)
+ .zekkert
+  &-top
+   overflow: hidden
+   &::after
+    width: 140%
+   &__img
+    img
+     max-width: 130%
+    span
+     img
+      max-width: 31.25vw
+   &__title
+    padding-top: 12.50vw
+    padding-bottom: 0px
+    font-size: 10vw
+    line-height: 150%
+  &-main
+   padding: 15.63vw 0
+   &__title
+    font-size: 6.25vw
+    margin-bottom: 12.50vw
+   &__wrap
+    margin-top: 0
+    display: block
+    border-right: 0
+   &__block
+    padding: 7.81vw 12.50vw
+    margin-top: -0.31vw
+    border: 0.31vw solid #32A5EB
+   &__el
+    font-size: 6.25vw
+    line-height: 7.50vw
+    margin-bottom: 9.38vw
+   &__text
+    font-size: 6.25vw
+   &__all
+    padding: 9.38vw
+    &-title
+     font-size: 8.75vw
+     margin-bottom: 9.38vw
+    &-list
+     li
+      padding-left: 9.38vw
+      margin-bottom: 6.25vw
+      font-size: 5.63vw
+      &::before
+       width: 6.25vw
+       height: 6.25vw
+       background-size: cover
+   &__prize
+    padding: 9.38vw
+    padding-bottom: 37.50vw
+    p
+     font-size: 5.63vw
+    &-img
+     justify-content: flex-end
+     img
+      max-width: 70%
+  &-cat
+   padding-bottom: 18.75vw
+   &__top
+    margin-bottom: 15.63vw
+   &__title
+    max-width: 100%
+    margin-top: 7.81vw
+    font-size: 6.88vw
+   &__wrap
+    margin-bottom: 12.50vw
+    display: block
+    border-right: 0px solid #32A5EB
+   &__block
+    margin-bottom: -0.31vw
+    padding: 7.81vw
+    border: 0.31vw solid #32A5EB
+    &:nth-child(3n), &:last-child
+     border-right: 0.31vw solid #32A5EB
+     margin-right: 0px
+   &__img
+    height: 43.75vw
+    margin-bottom: 6.25vw
+   &__name
+    font-size: 6.25vw
+   &__btn
+    max-width: 100%
+    text-align: center
+    padding: 0 4.69vw
+    width: 100%
+    height: 15.63vw
