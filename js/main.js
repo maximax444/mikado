@@ -41,9 +41,9 @@ $('.select__drop li').on('click', function (e) {
         $(this).closest('.select').find('span').hide();
         $(this).closest('.select').find('input').css('padding', '4.69vw 12.25vw 4.69vw 6.25vw');
     }
-    
+
 });
-$('.big-placeholder input').on('input', function() {
+$('.big-placeholder input').on('input', function () {
     if ($(this).val() != "") {
         $(this).next('span').addClass('hide');
         $(this).css('padding', '4.69vw 6.25vw');
@@ -91,6 +91,8 @@ window.addEventListener('scroll', function () {
 if (screen.width >= 1200) {
     let bg = $('.login__img img');
     let bg2 = $('.register__img img');
+    let bg3 = $('.programm-top__img img');
+    let bg4 = $('.main__img img');
     let map = $('.home-map__map');
     let zekk = $('.zekkert-top__img img');
     window.addEventListener('mousemove', function (e) {
@@ -98,6 +100,8 @@ if (screen.width >= 1200) {
         let y = e.clientY / window.innerHeight;
         bg.css('transform', 'translate(-' + x * 30 + 'px, -' + y * 30 + 'px)');
         bg2.css('transform', 'translate(-' + x * 30 + 'px, -' + y * 30 + 'px)');
+        bg3.css('transform', 'translate(-' + x * 30 + 'px, -' + y * 30 + 'px)');
+        bg4.css('transform', 'translate(-' + x * 30 + 'px, -' + y * 30 + 'px)');
         zekk.css('transform', 'translateX(-' + x * 30 + 'px)');
         map.css('transform', 'translate(-' + x * 20 + 'px, -' + y * 20 + 'px)');
     });
