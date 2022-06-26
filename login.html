@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mikado</title>
     <link rel="shortcut icon" href="/img/map.svg">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/style.min.css">
+
+
 </head>
 
 <body>
@@ -69,6 +72,11 @@
                 <div class="header__btns">
                     <a href="/register.html" class="btn btn--full">+ стать клиентом</a>
                 </div>
+                <div class="header-burger">
+                    <span></span>
+                </div>
+                <div class="header__drop">
+                </div>
             </div>
         </div>
     </header>
@@ -76,9 +84,16 @@
         <div class="container">
             <div class="nav__wrap">
                 <ul class="nav__menu">
-                    <li><a href="/programm.html">AD+</a></li>
-                    <li><a href="/zekkert.html">zekkert</a></li>
+                    <li><a href="/about.html">о компании</a></li>
                     <li><a href="/brands.html">Бренды</a></li>
+                    <li><span>
+                            программы лояльности
+                            <ul>
+                                <li><a href="/zekkert.html">zekkert smart</a></li>
+                                <li><a href="/programm.html">AD+</a></li>
+                            </ul>
+                        </span></li>
+
                     <li><a href="/news.html">Новости</a></li>
                     <li><a href="/contacts.html">Контакты</a></li>
                 </ul>
@@ -128,9 +143,9 @@
                     <a href="/register.html" class="btn btn--full">+ стать клиентом</a>
                 </div>
                 <ul class="footer__menu">
-                    <li><a href="/programm.html">AD+</a></li>
-                    <li><a href="/zekkert.html">zekkert</a></li>
+                    <li><a href="/about.html">О компании</a></li>
                     <li><a href="/brands.html">Бренды</a></li>
+                    <li><a href="/loyalty.html">Программы лояльности</a></li>
                     <li><a href="/news.html">Новости</a></li>
                     <li><a href="/contacts.html">Контакты</a></li>
                 </ul>
@@ -170,6 +185,7 @@
             </div>
         </div>
     </div>
+
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3_b3EhD0YXwMp0q8DObsfavvJTbJ4M7I&callback=initMap&v=weekly">
         </script>
