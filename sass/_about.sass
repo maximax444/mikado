@@ -1,0 +1,258 @@
+.about
+    &-last
+        &__block
+            margin-bottom: -1px
+        &__title
+            margin-top: 75px
+            margin-bottom: 100px
+            max-width: 830px
+    &-top
+        padding-top: 80px
+        padding-bottom: 110px
+        &__title
+            margin: 0
+            font-weight: 600
+            font-size: 70px
+            line-height: 126.7%
+            text-transform: uppercase
+            color: #32A5EB
+            margin-bottom: 75px
+        &__cont
+            padding-left: 350px
+            p
+                margin: 0
+                font-size: 16px
+                line-height: 140%
+                color: #162137
+        &__subtitle
+            font-weight: 500
+            font-size: 28px
+            line-height: 140%
+            text-transform: uppercase
+            margin-bottom: 50px
+            color: #162137
+            span
+                color: #32A5EB
+    &-features
+        &__wrap
+            width: calc(100% - 285px)
+            margin-right: 0
+            margin-left: auto
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-gap: 80px 60px
+        &__block
+            padding-left: 64px
+            position: relative
+        &__num
+            top: 0
+            left: 0
+            position: absolute
+            font-weight: 700
+            font-size: 28px
+            line-height: 29px
+            text-align: right
+            text-transform: uppercase
+            color: #32A5EB
+        &__title
+            margin-bottom: 35px
+            font-weight: 500
+            font-size: 28px
+            line-height: 109%
+            color: #000000
+        &__descr
+            font-size: 16px
+            line-height: 140%
+            color: #162137
+            margin: 0
+    &-img
+        height: 460px
+        overflow: hidden
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            transition: all 0.3s
+            transform: scale(1)
+        &:hover
+            img
+                transform: scale(1.1)
+    &-mission
+        padding: 120px 0
+        &__wrap
+            position: relative
+            padding: 70px
+            padding-left: 55%
+            background: conic-gradient(from 259.95deg at 52.08% 50.11%, #162137 0deg, #32A5EB 360deg)
+        &__img
+            position: absolute
+            display: flex
+            bottom: -2px
+            left: -1px
+            width: 45%
+            img
+                width: 100%
+        &__title
+            font-weight: 600
+            font-size: 40px
+            line-height: 47px
+            text-transform: uppercase
+            margin-bottom: 60px
+            color: #FFFFFF
+        &__list
+            padding: 0
+            margin: 0
+            list-style-type: none
+            li
+                font-size: 16px
+                line-height: 140%
+                color: #FFFFFF
+                position: relative
+                margin-bottom: 22px
+                &::before
+                    content: ""
+                    display: block
+                    width: 4px
+                    height: 4px
+                    border-radius: 50%
+                    position: absolute
+                    top: 9px
+                    left: -12px
+                    background-color: #fff
+    &-history
+        padding-top: 110px
+        .section__title
+            margin-bottom: 100px
+        &__block
+            height: 200px
+            width: 300px
+            padding-left: 25px
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            border-left: 2px solid #32A5EB
+            &:nth-child(2n)
+                justify-content: flex-end
+                margin-top: 125px
+        &__wrap
+            overflow-x: scroll
+            padding: 0 calc((100% - 1200px)/2)
+        &__all
+            width: 3000px
+            display: flex
+        &__date
+            font-weight: 700
+            font-size: 28px
+            line-height: 33px
+            text-transform: uppercase
+            color: #32A5EB
+        &__descr
+            padding: 15px 0
+            margin: 0
+            font-weight: 500
+            font-size: 16px
+            line-height: 140%
+            color: #162137
+            span
+                color: #32A5EB
+.nicescroll-rails
+    background: #162137
+    height: 1px !important
+    width: 685px !important
+    max-width: 685px
+    left: 50% !important
+    margin-left: -343px
+    .nicescroll-cursors
+        width: 30% !important
+@media(max-width: 991px)
+    .about
+        &-top
+            &__cont
+                padding-left: 0
+        &-features
+            &__wrap
+                width: 100%
+                margin-top: 80px
+@media(max-width: 767px)
+    .about
+        &-mission
+            &__img
+                width: 80%
+                top: -2px
+                left: 0
+                bottom: auto
+            &__wrap
+                padding: 55px 22px
+                padding-top: 250px
+        &-features
+            &__block
+                padding-left: 45px
+            &__title
+                font-size: 24px
+                margin-bottom: 20px
+@media(max-width: 575px)
+    .about
+        &-top
+            padding: 14.06vw 0
+            &__title
+                font-size: 10vw
+                line-height: 12.50vw
+                margin-bottom: 14.06vw
+            &__subtitle
+                margin-bottom: 8.44vw
+                font-size: 6.25vw
+                line-height: 140%
+            &__descr
+                font-size: 4.38vw
+                line-height: 172%
+            &__cont
+                p
+                    font-size: 4.38vw
+                    line-height: 172%
+        &-img
+            height: 78.13vw
+        &-history
+            padding-top: 17.19vw
+            overflow: hidden
+        &-mission
+            padding: 18.75vw 0
+            &__img
+                width: 86.25vw
+            &__wrap
+                padding: 10.94vw 6.25vw
+                padding-top: 62.50vw
+                margin-left: -15px
+                margin-right: -15px
+            &__title
+                font-size: 10vw
+                line-height: 11.56vw
+                margin-bottom: 12.50vw
+            &__list
+                li
+                    font-size: 4.38vw
+                    line-height: 5.31vw
+                    margin-bottom: 5.31vw
+        &-features
+            &__wrap
+                display: block
+                margin-top: 9.38vw
+                margin-bottom: 18.75vw
+            &__block
+                padding-left: 14.06vw
+            &__num
+                font-size: 6.25vw
+                line-height: 7.50vw
+            &__title
+                font-size: 6.25vw
+                line-height: 140%
+                margin-bottom: 6.25vw
+            &__descr
+                font-size: 4.38vw
+                line-height: 172%
+        &-last
+            padding-bottom: 32.81vw
+            &__title
+                margin-top: 9.38vw
+                margin-bottom: 15.63vw
+            &__block
+                margin: 0.63vw

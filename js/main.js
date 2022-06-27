@@ -127,6 +127,23 @@ if ($(window).width() <= 575) {
         prevArrow: ".home-features_left",
         nextArrow: ".home-features_right"
     });
+    $(".about-features__wrap").slick({
+        slide: ".about-features__block",
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: ".home-features_left1",
+        nextArrow: ".home-features_right1"
+    });
+    $(".about-last .zekkert-main__wrap").slick({
+        slide: ".about-last__block",
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: ".home-features_left2",
+        nextArrow: ".home-features_right2"
+    });
+
 }
 $('.header-burger').on('click', function () {
     $(this).toggleClass('active');
@@ -150,4 +167,16 @@ $('.brands-top__drop a').on('click', function (e) {
     $(this).closest('.brands-top__drop').removeClass('active');
     $(this).closest('.brands-top__list').find('.brands-top__list-title span').html($(this).html());
     $('.brands-top__type').val($(this).html());
+});
+$(".about-history__wrap").niceScroll({
+    cursorcolor: "#32A5EB",
+    cursorwidth: "4px",
+    cursorborder: "0",
+    autohidemode: false,
+    railpadding: { top: -30, right: 0, left: 0, bottom: 0 }
+});
+$(".about-history__wrap").niceScroll().scrollstart(function (info) {
+    $('.nicescroll-cursors').css('left', (info.current.x / ($(".about-history__all").innerWidth() - $(".container").innerWidth())) * 70 + '%')
+
+
 });
