@@ -207,6 +207,14 @@ $('.brands-top__drop a').on('click', function (e) {
 
 
 // });
+$(document).on({
+    mouseenter: function () {
+        $('.home-map__point[data-city="' + $(this).attr('data-tocity') + '"]').addClass('active');
+    },
+    mouseleave: function () {
+        $('.home-map__point[data-city="' + $(this).attr('data-tocity') + '"]').removeClass('active');
+    }
+}, '.home-map .contacts__cities-title');
 
 var $frame = $('.frame__wrap');
 var $slidee = $('.frame');
@@ -231,3 +239,4 @@ $frame.sly({
     dynamicHandle: 1,
     clickBar: 1
 });
+
