@@ -145,6 +145,19 @@ if ($(window).width() <= 575) {
     });
 
 }
+if ($(window).width() <= 767) {
+    var items = $('.brands__wrap a'),
+        per = 20,
+        i = 1,
+        total = 0;
+    $('.brands__btn').on('click', function (e) {
+        e.preventDefault();
+        total = per * (i++);
+        items.slice(0, total).css('display', 'block');
+        $(this)[total >= items.length ? 'hide' : 'show']();
+    }).click();
+}
+
 $('.header-burger').on('click', function () {
     $(this).toggleClass('active');
     $('.header__drop').toggleClass('active');

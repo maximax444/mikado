@@ -4,7 +4,7 @@
         margin-top: 0
         margin-bottom: 75px
     &__wrap
-        columns: 3
+        columns: 5
         a
             display: block
             font-weight: 400
@@ -188,6 +188,14 @@
     line-height: 140%
     color: #162137
     margin-bottom: 22px
+@media(max-width: 1219px)
+    .brands
+        &__wrap
+            columns: 4
+@media(max-width: 991px)
+    .brands
+        &__wrap
+            columns: 3
 @media(max-width: 767px)
     .brands
         &__btn
@@ -196,7 +204,9 @@
             width: 100%
             margin-top: 70px
         &__wrap
-            columns: 2
+            columns: 1
+            a
+                display: none
         &-top
             &__list
                 width: 100%
