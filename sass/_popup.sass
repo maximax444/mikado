@@ -13,6 +13,10 @@
   justify-content: center
   align-items: center
   padding: 40px 0
+ &-brand
+  align-items: flex-start
+  .popup-wrap
+   max-width: 100%
 .popup
  &-close
   margin: 0 auto
@@ -26,6 +30,15 @@
   &:hover
    cursor: pointer
    transform: rotate(90deg)
+  &__brand
+   position: absolute
+   top: 45px
+   right: 45px
+ &-brand
+  width: 955px
+  max-width: 100%
+  padding: 60px 80px
+  background: #FFFFFF
  &-call
   max-width: 100vw
   width: 688px
@@ -108,6 +121,9 @@
   color: #162137
 .animate__animated.animate__backInUp
  --animate-duration: 0.8s
+@media(max-width: 991px)
+ .overlay-brand
+  padding: 0
 @media(max-width: 575px)
  .overflow
   overflow-y: hidden
@@ -155,3 +171,8 @@
   p
    max-width: calc(100% - 12.50vw)
    font-size: 3.75vw
+ .popup
+  &-brand
+   padding: 40px 20px
+  &-close__brand
+   position: static

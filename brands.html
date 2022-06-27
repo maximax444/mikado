@@ -105,146 +105,242 @@
       </div>
     </div>
   </nav>
-    <section class="brands">
-        <div class="container">
-            <h1 class="section__title">Бренды</h1>
-            <div class="brands__wrap">
-                <a href="">1-56 MARUICHI</a>
-                <a href="">1New</a>
-                <a href="">555</a>
-                <a href="" data-start="A">ACDelco</a>
-                <a href="">Airline</a>
-                <a href="">Airtex</a>
-                <a href="">AISAN</a>
-                <a href="">Aisin</a>
-                <a href="">Ajusa</a>
-                <a href="">A-N Parts</a>
-                <a href="">ASAM-SA</a>
-                <a href="">ASP</a>
-                <a href="">ASSO</a>
-                <a href="">Atiho</a>
-                <a href="">AutoTechteile</a>
-                <a href="">AVA</a>
-                <a href="" data-start="B">BARDAHL</a>
-                <a href="">Big Filter</a>
-                <a href="">Bilstein</a>
-                <a href="">BluePrint</a>
-                <a href="">BOSCH</a>
+  <div class="brands-top">
+    <div class="container">
+      <form class="brands-top__form">
+        <!-- Сюда записывается товарная группа -->
+        <input type="hidden" class="brands-top__type" name="type">
+        <div class="brands-top__left">
+          <div class="brands-top__list">
+            <div class="brands-top__list-title"><span>Товарные группы</span> <img src="img/brands-drop.svg" alt="">
             </div>
+            <div class="brands-top__drop">
+              <a href="">Амортизаторы</a>
+              <a href="">Антифризы</a>
+              <a href="">Водяные насосы</a>
+              <a href="">Воздушные фильтры</a>
+              <a href="">Вентиляторы охлаждения, отопления</a>
+              <a href="">Газовые упоры</a>
+              <a href="">Генераторы, стартеры</a>
+              <a href="">Датчики</a>
+              <a href="">Датчики износа тормозных колодок</a>
+              <a href="">Детали двигателя</a>
+              <a href="">Детали кузова</a>
+              <a href="">Детали подвески</a>
+              <a href="">Замки, личинки замков, ручки</a>
+              <a href="">Зеркала</a>
+              <a href="">Катушки, вв провода</a>
+            </div>
+          </div>
+          <input type="text" name="search" id="" required placeholder="Поиск...">
         </div>
-    </section>
-
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__top">
-                <div class="footer__main">
-                    <a href="/" class="footer__logo">
-                        <img src="img/footer__logo.svg" alt="">
-                    </a>
-                    <a href="/register.html" class="btn btn--full">+ стать клиентом</a>
-                </div>
-                <ul class="footer__menu">
-                    <li><a href="/about.html">О компании</a></li>
-                    <li><a href="/brands.html">Бренды</a></li>
-                    <li><a href="/loyalty.html">Программы лояльности</a></li>
-                    <li><a href="/news.html">Новости</a></li>
-                    <li><a href="/contacts.html">Контакты</a></li>
-                </ul>
-            </div>
-            <div class="footer__dop">
-                <p class="footer__copy">
-                    © 1994-2022, компания микадо. Все права защищены.
-                </p>
-                <a class="footer__dev" href="https://www.versality.ru/">
-                    <span>разработка сайта</span>
-                    <img src="img/hero-logo.svg" alt="">
-                </a>
-            </div>
-        </div>
-    </footer>
-    <div class="overlay overlay-call">
-        <div class="popup-wrap">
-            <div class="popup-call animate__animated animate__backInUp">
-                <div class="popup-close"><img src="img/close.svg" alt=""></div>
-                <div class="popup__title">Связаться с нами</div>
-                <form>
-                    <input type="text" required placeholder="Имя">
-                    <input type="tel" required placeholder="Теле фон">
-                    <input type="email" required placeholder="E-mail">
-                    <button class="btn btn--full">Отправить</button>
-                    <label class="check">
-                        <input type="checkbox" class="checkbox" name="" id="" required>
-                        <span></span>
-                        <p>
-                            Нажимая на кнопку «Отправить», вы даете согласие
-                            на обработку своих персональных данных
-                        </p>
-                    </label>
-
-                </form>
-
-            </div>
-        </div>
+        <button class="btn btn--full">
+          <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="13.5" cy="13.5" r="8.54594" transform="rotate(-45 13.5 13.5)" stroke="white" stroke-width="2" />
+            <path d="M19.9297 20.4512L25.6318 26.1533" stroke="white" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+      </form>
     </div>
+  </div>
+  <div class="brands-exc">
+    <div class="container">
+      <h2 class="section__title section__title--big">Эксклюзивные бренды</h2>
+      <div class="brands-exc__wrap">
+        <a href=""><img src="img/ex1.svg" alt=""></a>
+        <a href=""><img src="img/ex2.png" alt=""></a>
+        <a href=""><img src="img/ex3.png" alt=""></a>
+      </div>
+    </div>
+  </div>
+  <section class="brands">
+    <div class="container">
+      <h1 class="section__title">Бренды</h1>
+      <div class="brands__wrap">
+        <a href="">1-56 MARUICHI</a>
+        <a href="">1New</a>
+        <a href="">555</a>
+        <a href="" data-start="A">ACDelco</a>
+        <a href="">Airline</a>
+        <a href="">Airtex</a>
+        <a href="">AISAN</a>
+        <a href="">Aisin</a>
+        <a href="">Ajusa</a>
+        <a href="">A-N Parts</a>
+        <a href="">ASAM-SA</a>
+        <a href="">ASP</a>
+        <a href="">ASSO</a>
+        <a href="">Atiho</a>
+        <a href="">AutoTechteile</a>
+        <a href="">AVA</a>
+        <a href="" data-start="B">BARDAHL</a>
+        <a href="">Big Filter</a>
+        <a href="">Bilstein</a>
+        <a href="">BluePrint</a>
+        <a href="">BOSCH</a>
+      </div>
+      <a href="" class="btn btn--full brands__btn">показать еще</a>
+    </div>
+  </section>
 
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3_b3EhD0YXwMp0q8DObsfavvJTbJ4M7I&callback=initMap&v=weekly">
-        </script>
-    <script type="text/javascript">
-        // When the window has finished loading create our google map below
-        google.maps.event.addDomListener(window, 'load', init);
 
-        function init() {
-            // Basic options for a simple Google Map
-            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-            var mapOptions = {
-                // How zoomed in you want the map to start at (always required)
-                zoom: 15,
-                zoomControl: false,
-                // scaleControl: false,
-                streetViewControl: false,
-                mapTypeControl: false,
-                fullscreenControl: false,
-                // The latitude and longitude to center the map (always required)
-                center: new google.maps.LatLng(59.929096, 30.321698), // New York
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__main">
+          <a href="/" class="footer__logo">
+            <img src="img/footer__logo.svg" alt="">
+          </a>
+          <a href="/register.html" class="btn btn--full">+ стать клиентом</a>
+        </div>
+        <ul class="footer__menu">
+          <li><a href="/about.html">О компании</a></li>
+          <li><a href="/brands.html">Бренды</a></li>
+          <li><a href="/loyalty.html">Программы лояльности</a></li>
+          <li><a href="/news.html">Новости</a></li>
+          <li><a href="/contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__dop">
+        <p class="footer__copy">
+          © 1994-2022, компания микадо. Все права защищены.
+        </p>
+        <a class="footer__dev" href="https://www.versality.ru/">
+          <span>разработка сайта</span>
+          <img src="img/hero-logo.svg" alt="">
+        </a>
+      </div>
+    </div>
+  </footer>
+  <div class="overlay overlay-call">
+    <div class="popup-wrap">
+      <div class="popup-call animate__animated animate__backInUp">
+        <div class="popup-close"><img src="img/close.svg" alt=""></div>
+        <div class="popup__title">Связаться с нами</div>
+        <form>
+          <input type="text" required placeholder="Имя">
+          <input type="tel" required placeholder="Теле фон">
+          <input type="email" required placeholder="E-mail">
+          <button class="btn btn--full">Отправить</button>
+          <label class="check">
+            <input type="checkbox" class="checkbox" name="" id="" required>
+            <span></span>
+            <p>
+              Нажимая на кнопку «Отправить», вы даете согласие
+              на обработку своих персональных данных
+            </p>
+          </label>
 
-                // How you would like to style the map. 
-                // This is where you would paste any style found on Snazzy Maps.
-                styles: [{ "featureType": "administrative", "elementType": "labels.text.fill", "stylers": [{ "color": "#444444" }] }, { "featureType": "landscape", "elementType": "all", "stylers": [{ "color": "#f2f2f2" }] }, { "featureType": "poi", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "road", "elementType": "all", "stylers": [{ "saturation": -100 }, { "lightness": 45 }] }, { "featureType": "road.highway", "elementType": "all", "stylers": [{ "visibility": "simplified" }] }, { "featureType": "road.arterial", "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "featureType": "transit", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "water", "elementType": "all", "stylers": [{ "color": "#46bcec" }, { "visibility": "on" }] }]
-            };
+        </form>
 
-            // Get the HTML DOM element that will contain your map 
-            // We are using a div with id="map" seen below in the <body>
-            var mapElement = document.getElementById('map');
+      </div>
+    </div>
+  </div>
+  <div class="overlay overlay-brand ">
+    <div class="popup-wrap">
+      <div class="popup-brand animate__animated animate__backInUp">
+        <div class="popup-close popup-close__brand"><img src="img/close.svg" alt=""></div>
+        <div class="brands-popup__logo">
+          <img src="img/brands-popup.png" alt="">
+        </div>
+        <div class="brands-popup__title">KRAUF</div>
+        <div class="brands-popup__slog">место для слогана</div>
+        <a href="" class="brands-popup__site"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect width="20" height="20" fill="white" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M6.62006 3.30283C5.36614 3.93688 4.31417 4.91295 3.58666 6.10935C3.01964 7.04183 2.65027 8.10763 2.53698 9.25H5.01656C5.10886 7.16919 5.5825 5.27018 6.32807 3.8229C6.41981 3.64482 6.51719 3.47103 6.62006 3.30283ZM10 1C6.73829 1 3.88264 2.73557 2.30501 5.33C1.47681 6.692 1 8.29147 1 10C1 14.9706 5.02944 19 10 19C14.9706 19 19 14.9706 19 10C19 8.29147 18.5232 6.692 17.695 5.33C16.1174 2.73557 13.2617 1 10 1ZM9.25 2.69419C8.70918 2.9718 8.15257 3.55664 7.66153 4.50984C7.0393 5.71769 6.60954 7.37361 6.51816 9.25H9.25V2.69419ZM9.25 10.75H6.51816C6.60954 12.6264 7.0393 14.2823 7.66153 15.4902C8.15257 16.4434 8.70918 17.0282 9.25 17.3058V10.75ZM6.61994 16.697C6.51711 16.5288 6.41977 16.3551 6.32807 16.1771C5.5825 14.7298 5.10886 12.8308 5.01656 10.75H2.53703C2.79567 13.355 4.38718 15.5678 6.61994 16.697ZM13.3801 16.697C15.6128 15.5678 17.2043 13.355 17.463 10.75H14.9834C14.8911 12.8308 14.4175 14.7298 13.6719 16.1771C13.5802 16.3551 13.4829 16.5288 13.3801 16.697ZM13.4818 10.75H10.75V17.3058C11.2908 17.0282 11.8474 16.4434 12.3385 15.4902C12.9607 14.2823 13.3905 12.6264 13.4818 10.75ZM13.4818 9.25H10.75V2.69419C11.2908 2.9718 11.8474 3.55664 12.3385 4.50984C12.9607 5.71769 13.3905 7.37361 13.4818 9.25ZM14.9834 9.25C14.8911 7.16919 14.4175 5.27018 13.6719 3.8229C13.5802 3.64482 13.4828 3.47103 13.3799 3.30283C14.6339 3.93688 15.6858 4.91295 16.4133 6.10935C16.9804 7.04183 17.3497 8.10763 17.463 9.25H14.9834Z"
+              fill="black" />
+          </svg> <span>krauf.org</span></a>
+        <p>Торговая марка KRAUF, созданная в 1994 году, объединяет более 150 узкоспециализированных заводов
+          изготовителей автозапчастей, расположенных в Юго-Восточной Азии, Европе
+          и Америке.</p>
+        <div class="brands-popup__subtitle">Товарные группы</div>
+        <ul class="brands-popup__list">
+          <li>Термостаты</li>
+          <li>Ремни ГРМ PowerGrip®</li>
+          <li>Клиновые ремни</li>
+          <li>Поликлиновые ремни</li>
+          <li>Ремни Stretch Fit™</li>
+          <li>Ремни Gates Micro-V® XF</li>
+          <li>Топливные шланги</li>
+          <li>Натяжители DriveAlign®</li>
+        </ul>
+        <div class="brands-popup__subtitle">Компания</div>
+        <p>Основным направлением компании является производство автозапчастей для автомобилей европейского, корейского,
+          японского, американского и азиатского регионов. Компания производит большой ассортимент агрегатов для легковых
+          автомобилей, спецтехники, автобусов и грузовиков от ведущих мировых производителей, включая российские и
+          китайские марки.</p>
+        <p>Главные преимущества продукции KRAUF: полная копия оригинального агрегата; ремонтопригодность запчастями
+          оригинальных и неоригинальных производителей; произведено на высокоточном современном оборудовании; высокое
+          качество, контролируемое специалистами из Германии; низкая цена.</p>
+        <p>Направления: Стартеры, Генераторы, Насосы топливные, Турбокомпрессоры, Компрессоры кондиционера и Рулевое
+          управление.</p>
+        <p>Страна: Германия</p>
+        <div class="brands-popup__subtitle">Сертификаты</div>
+        <p>Вся продукция KRAUF соответствует международным стандартам производства и имеет сертификаты ISO 9001, ISO
+          9002, РОСТЕСТ.</p>
+      </div>
+    </div>
+  </div>
 
-            // Create the Google Map using our element and options defined above
-            var map = new google.maps.Map(mapElement, mapOptions);
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3_b3EhD0YXwMp0q8DObsfavvJTbJ4M7I&callback=initMap&v=weekly">
+    </script>
+  <script type="text/javascript">
+    // When the window has finished loading create our google map below
+    google.maps.event.addDomListener(window, 'load', init);
 
-            // Let's also add a marker while we're at it
-            var marker = new google.maps.Marker({
-                position: new google.maps.LatLng(59.929096, 30.321698),
-                map: map,
-                title: 'Mikado',
-                icon: {
-                    url: "img/map.svg",
-                    scaledSize: new google.maps.Size(64, 64)
-                }
-            });
+    function init() {
+      // Basic options for a simple Google Map
+      // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+      var mapOptions = {
+        // How zoomed in you want the map to start at (always required)
+        zoom: 15,
+        zoomControl: false,
+        // scaleControl: false,
+        streetViewControl: false,
+        mapTypeControl: false,
+        fullscreenControl: false,
+        // The latitude and longitude to center the map (always required)
+        center: new google.maps.LatLng(59.929096, 30.321698), // New York
 
+        // How you would like to style the map. 
+        // This is where you would paste any style found on Snazzy Maps.
+        styles: [{ "featureType": "administrative", "elementType": "labels.text.fill", "stylers": [{ "color": "#444444" }] }, { "featureType": "landscape", "elementType": "all", "stylers": [{ "color": "#f2f2f2" }] }, { "featureType": "poi", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "road", "elementType": "all", "stylers": [{ "saturation": -100 }, { "lightness": 45 }] }, { "featureType": "road.highway", "elementType": "all", "stylers": [{ "visibility": "simplified" }] }, { "featureType": "road.arterial", "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "featureType": "transit", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "water", "elementType": "all", "stylers": [{ "color": "#46bcec" }, { "visibility": "on" }] }]
+      };
+
+      // Get the HTML DOM element that will contain your map 
+      // We are using a div with id="map" seen below in the <body>
+      var mapElement = document.getElementById('map');
+
+      // Create the Google Map using our element and options defined above
+      var map = new google.maps.Map(mapElement, mapOptions);
+
+      // Let's also add a marker while we're at it
+      var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(59.929096, 30.321698),
+        map: map,
+        title: 'Mikado',
+        icon: {
+          url: "img/map.svg",
+          scaledSize: new google.maps.Size(64, 64)
         }
-    </script>
+      });
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
-    </script>
-    <script>
-        new WOW({
-            mobile: false,
-        }).init();
-    </script>
-    <script src="js/main.js"></script>
+    }
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+  </script>
+  <script>
+    new WOW({
+      mobile: false,
+    }).init();
+  </script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

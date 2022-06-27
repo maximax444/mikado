@@ -1,6 +1,8 @@
 .brands
-    padding-top: 60px
     padding-bottom: 95px
+    .section__title
+        margin-top: 0
+        margin-bottom: 75px
     &__wrap
         columns: 3
         a
@@ -24,3 +26,282 @@
         pointer-events: none
         text-transform: uppercase
         color: #32A5EB
+    &-exc
+        padding-bottom: 35px
+        &__wrap
+            display: flex
+            align-items: center
+            justify-content: space-between
+            a
+                width: 30%
+                display: flex
+                align-items: center
+                justify-content: center
+                img
+                    max-width: 100%
+        .section__title
+            margin-top: 0
+            margin-bottom: 34px
+    &-top
+        padding-top: 60px
+        padding-bottom: 90px
+        &__form
+            display: flex
+            align-items: center
+            justify-content: space-between
+            input[type="text"]
+                width: 754px
+                height: 40px
+                left: 363px
+                top: 186px
+                border: 2px solid #32A5EB
+                padding: 0 30px
+                font-family: 'Mazzard'
+                font-style: normal
+                font-weight: 400
+                font-size: 16px
+                line-height: 140%
+                color: #162137
+                padding-bottom: 1px
+            .btn
+                width: 108px
+                height: 40px
+                display: flex
+                justify-content: center
+                align-items: center
+                padding: 0
+                padding-bottom: 2px
+                path, circle
+                    transition: all 0.3s
+                &:hover
+                    path, circle
+                        stroke: #32A5EB
+        &__left
+            position: relative
+            display: flex
+            align-items: center
+            max-width: 90%
+        &__list
+            width: 245px
+            margin-right: -2px
+            &-title
+                border: 2px solid #32A5EB
+                height: 40px
+                width: 100%
+                display: flex
+                justify-content: center
+                align-items: center
+                font-size: 16px
+                line-height: 140%
+                color: #32A5EB
+                cursor: pointer
+                img
+                    margin-top: 1px
+                    margin-left: 14px
+                span
+                    max-width: 85%
+                    height: 22px
+                    white-space: nowrap
+                    overflow: hidden
+                    text-overflow: ellipsis
+        &__drop
+            position: absolute
+            top: 40px
+            left: 0
+            width: 100%
+            background: #ECECEC
+            padding: 24px 40px
+            z-index: 3
+            columns: 3
+            display: none
+            a
+                display: block
+                font-size: 16px
+                line-height: 241%
+                color: #162137
+                text-decoration: none
+                &:hover
+                    color: #32A5EB
+                    text-decoration: underline
+            &.active
+                display: block
+    &-popup
+        &__logo
+            max-width: 200px
+            margin-bottom: 19px
+            img
+                max-width: 100%
+        &__title
+            font-weight: 500
+            font-size: 28px
+            line-height: 140%
+            text-transform: uppercase
+            color: #32A5EB
+        &__slog
+            font-weight: 500
+            font-size: 28px
+            line-height: 140%
+            text-transform: uppercase
+            color: #162137
+            margin-bottom: 35px
+        &__site
+            display: flex
+            align-items: center
+            text-decoration: none
+            margin-bottom: 40px
+            path
+                transition: all 0.3s
+            span
+                text-decoration: underline
+                font-size: 16px
+                line-height: 241%
+                text-decoration-line: underline
+                color: #162137
+                margin-left: 17px
+                transition: all 0.3s
+            &:hover
+                span
+                    color: #32A5EB
+                path
+                    fill: #32A5EB
+        &__subtitle
+            margin-bottom: 40px
+            padding-top: 30px
+            font-weight: 600
+            font-size: 28px
+            line-height: 33px
+            color: #32A5EB
+        &__list
+            margin: 0
+            padding: 0
+            list-style-type: none
+            columns: 3
+            margin-bottom: 22px
+            li
+                font-size: 16px
+                line-height: 241%
+                color: #32A5EB
+    &__btn
+        display: none
+.popup-brand p
+    font-size: 16px
+    line-height: 140%
+    color: #162137
+    margin-bottom: 22px
+@media(max-width: 767px)
+    .brands
+        &__btn
+            display: flex
+            justify-content: center
+            width: 100%
+            margin-top: 70px
+        &__wrap
+            columns: 2
+        &-top
+            &__list
+                width: 100%
+            &__form
+                display: block
+                .btn, input[type="text"]
+                    margin-top: 15px
+                    width: 100%
+            &__left
+                display: block
+                max-width: 100%
+            &__drop
+                columns: 2
+                height: 450px
+                overflow-y: scroll
+        &-popup__list
+            columns: 2
+@media(max-width: 575px)
+    .brands
+        padding-bottom: 21.88vw
+        &-top
+            padding-top: 9.38vw
+            padding-bottom: 15.63vw
+            &__form
+                input[type="text"]
+                    margin-top: 5.31vw
+                    font-size: 5vw
+                    left: 113.44vw
+                    border: 0.63vw solid #32A5EB
+                    height: 12.50vw
+                .btn
+                    margin: 0 auto
+                    margin-top: 8.13vw
+                    width: 33.75vw
+                    height: 12.50vw
+                    svg
+                        width: 8.44vw
+                        height: 8.75vw
+            &__list
+                &-title
+                    border: 0.63vw solid #32A5EB
+                    height: 12.50vw
+                    font-size: 5vw
+                    img
+                        margin-top: 0.31vw
+                        margin-left: 4.38vw
+                        width: 2.50vw
+                    span
+                        height: 6.88vw
+            &__drop
+                top: 12.50vw
+                height: 140.63vw
+                padding: 7.50vw 12.50vw
+                columns: auto
+                a
+                    font-size: 5vw
+                    line-height: 150%
+                    margin-bottom: 5vw
+        &-exc
+            display: none
+        .section__title
+            display: none
+        &__wrap
+            columns: 1
+            padding-left: 15.63vw
+            a
+                font-size: 5vw
+        &__btn
+            margin-top: 21.88vw
+        &__letter
+            font-size: 8.75vw
+            left: -15vw
+            top: -0.31vw
+        &-popup
+            &__logo
+                margin-bottom: 3.75vw
+                width: 62.50vw
+            &__title
+                font-size: 6.25vw
+                line-height: 140%
+            &__slog
+                margin-bottom: 6.56vw
+                font-size: 6.25vw
+                line-height: 140%
+            &__site
+                margin-bottom: 8.13vw
+                span
+                    font-size: 5vw
+                    line-height: 241%
+                    margin-left: 5.63vw
+                img
+                    width: 6.25vw
+            &__subtitle
+                font-size: 6.25vw
+                line-height: 7.50vw
+                margin-bottom: 7.50vw
+                padding-top: 3.75vw
+            &__list
+                font-size: 4.38vw
+                line-height: 215%
+                columns: 1
+                li
+                    font-size: 5vw
+    .popup-brand
+        p
+            font-size: 4.38vw
+            line-height: 172%
+            margin-bottom: 7.50vw
