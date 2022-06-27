@@ -181,15 +181,53 @@ $('.brands-top__drop a').on('click', function (e) {
     $(this).closest('.brands-top__list').find('.brands-top__list-title span').html($(this).html());
     $('.brands-top__type').val($(this).html());
 });
-$(".about-history__wrap").niceScroll({
-    cursorcolor: "#32A5EB",
-    cursorwidth: "4px",
-    cursorborder: "0",
-    autohidemode: false,
-    railpadding: { top: -30, right: 0, left: 0, bottom: 0 }
-});
-$(".about-history__wrap").niceScroll().scrollstart(function (info) {
-    $('.nicescroll-cursors').css('left', (info.current.x / ($(".about-history__all").innerWidth() - $(".container").innerWidth())) * 70 + '%')
+// $(".about-history__wrap").niceScroll({
+//     cursorcolor: "#32A5EB",
+//     cursorwidth: "4px",
+//     cursorborder: "0",
+//     autohidemode: false,
+//     cursorfixedheight: 70,
+//     railpadding: { top: -30, right: 1215, left: 0, bottom: 0 }
+// });
+// $(window).on('resize', function () {
+//     var win = $(this).width() - 685;
+//     $(".about-history__wrap").getNiceScroll().remove();
+//     $(".about-history__wrap").niceScroll({
+//         cursorcolor: "#32A5EB",
+//         cursorwidth: "4px",
+//         cursorborder: "0",
+//         autohidemode: false,
+//         cursorfixedheight: 70,
+//         railpadding: { top: -30, right: win, left: 0, bottom: 0 }
+//     });
+// });
+// $(".about-history__wrap").niceScroll().scrollstart(function (e, info) {
+//     e.preventDefault();
+//     $('.nicescroll-cursors').css('left', (info.current.x / ($(".about-history__all").innerWidth() - $(".container").innerWidth())) * 70 + '%')
 
 
+// });
+
+var $frame = $('.frame__wrap');
+var $slidee = $('.frame');
+var $wrap = $frame.parent();
+
+// Call Sly on frame
+$frame.sly({
+    horizontal: 1,
+    itemNav: 'basic',
+    smart: 1,
+    activateOn: 'click',
+    mouseDragging: 1,
+    touchDragging: 1,
+    releaseSwing: 1,
+    startAt: 0,
+    scrollBar: $wrap.find('.scrollbar'),
+    scrollBy: 1,
+    speed: 3000,
+    elasticBounds: 1,
+    easing: 'easeOutExpo',
+    dragHandle: 1,
+    dynamicHandle: 1,
+    clickBar: 1
 });
