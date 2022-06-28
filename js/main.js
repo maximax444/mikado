@@ -219,7 +219,7 @@ $(document).on({
 var $frame = $('.frame__wrap');
 var $slidee = $('.frame');
 var $wrap = $frame.parent();
-
+$('input[type="tel"]').inputmask("+7 (999) 999-99-99");
 // Call Sly on frame
 $frame.sly({
     horizontal: 1,

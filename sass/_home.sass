@@ -224,6 +224,17 @@
    transition: all 0.3s
    text-decoration: none
    color: #162137
+   position: relative
+   &::after
+    width: 0
+    content: ""
+    display: block
+    height: 5px
+    background: #162137
+    position: absolute
+    bottom: 0
+    left: 50%
+    transition: all 0.3s
   &__logo
    height: 37px
    width: 100px
@@ -269,6 +280,9 @@
    background: #32A5EB
    color: #fff
    padding-top: 17px
+   &::after
+    left: 0
+    width: 100%
    .home-news
     &__logo
      padding: 0 29px

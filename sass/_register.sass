@@ -56,11 +56,13 @@
    line-height: 150%
    color: #162137
    border-radius: 0
-   border: 0 
+   border: 0
    border-bottom: 1px solid #32A5EB
    &.full
-    width: 100%  
+    width: 100%
     max-width: 100%
+   &:focus
+    border-bottom: 2px solid #32A5EB
   .btn
    width: 300px
    height: 50px
@@ -74,6 +76,9 @@
   display: flex
   flex-wrap: wrap
   justify-content: space-between
+  &:first-child
+   position: relative
+   z-index: 2
  &__doptitle
   font-weight: 500
   font-size: 18px
@@ -108,7 +113,7 @@
   margin: 0
   list-style-type: none
   background: #FFFFFF
-  border: 1px solid #32A5EB  
+  border: 1px solid #32A5EB
   position: absolute
   top: calc(100% - 17px)
   left: 0
@@ -153,7 +158,7 @@
    position: relative
    background-color: #fff
    padding-top: 450px
-   padding-bottom: 50px	
+   padding-bottom: 50px
   &__img
    display: flex
    justify-content: center
@@ -219,6 +224,8 @@
     padding: 4.69vw 6.25vw
     margin-bottom: 6.25vw
     border-bottom: 0.31vw solid #32A5EB
+    &:focus
+     border-bottom: 0.63vw solid #32A5EB
    .btn
     width: 100%
     height: 15.63vw
@@ -260,7 +267,7 @@
    left: 0
    top: 4.69vw
    font-size: 4.38vw
-   padding: 0 6.25vw	
+   padding: 0 6.25vw
    position: absolute
    background-color: #fff
    line-height: 150%
@@ -268,4 +275,3 @@
    transition: all 0.3s
    &.hide
     opacity: 0
-  
